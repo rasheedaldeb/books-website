@@ -1,0 +1,60 @@
+.map {
+    padding: 100px 5.1244vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.map-form {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.form-info h1 {
+    padding-bottom: 30px;
+}
+.form-info p {
+    line-height: 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.form input {
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--primery-color);
+}
+.form input::placeholder {
+    font-size: 16px;
+}
+.form button {
+    height: 50px;
+    border: none;
+    background-color: var(--primery-color);
+    border-radius: 3px;
+    color: #fff;
+}
+.map .google-map {
+    width: 593px;
+}
+.google-map iframe {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (max-width:768px) {
+    .map {
+        justify-content: center;
+    }
+    .map .google-map {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .map-form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,91 @@
+nav {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.1244vw;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+
+}
+nav .list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+.list li .link {
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+nav .mode {
+    display: flex;
+    gap: 5px;
+}
+.mode h3 {
+    font-weight: 400;
+}
+nav .menue {
+    font-size: 24px;
+    color: var(--primery-color);
+    display: none;
+}
+.mobile {
+    display: flex;
+    justify-content: flex-end;
+}
+.mobile-data {
+    width: 256px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 5;
+    display: none;
+}
+.mobile-data .close {
+    font-size: 25px;
+    color: var(--primery-color);
+    padding: 30px 20px;
+}
+.mobile-data .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 35px;
+    padding: 30px 20px 50px;
+}
+.mobile-nav .link-2 {
+    text-decoration: none;
+    color: black;
+}
+.mobile-data hr {
+    color: var(--primery-color);
+}
+.mobile-data .mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 19px;
+}
+
+@media screen and (max-width: 768px){
+    nav .list,  nav .mode {
+        display: none;
+    }
+    nav .menue {
+        display: block;
+    }
+    nav .logo {
+        width: 61px;
+    }
+    nav .list li {
+        font-size: 10px;
+    }
+}

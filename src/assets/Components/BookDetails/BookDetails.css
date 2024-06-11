@@ -1,0 +1,75 @@
+.book-data {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    justify-content: center;
+    padding: 100px 5.1244vw;
+}
+.book-data .book-img {
+    width: 476px;
+    height: 100%;
+}
+.book-detail {
+    max-width: 698.11px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.book-detail .heading h3 {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.book-detail .about-book h2 {
+    padding-bottom: 10px;
+}
+.book-detail .about-book p {
+    font-size: 14px;
+    line-height: 23px;
+}
+.book-detail .buttons {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primery-color);
+    padding-bottom: 30px;
+}
+.book-detail .buttons button{
+    width: 333px;
+    height: 46px;
+    border: none;
+    border-radius: 3px;
+}
+.book-detail .buttons button:first-child {
+    background-color: var(--primery-color);
+    color: #fff;
+}
+.book-detail .buttons button:nth-child(2) {
+    border: 1px solid var(--primery-color);
+    background: none;
+    color: var(--primery-color);
+}
+.book-detail span {
+    color: var(--primery-color);
+}
+.adition-detail {
+    display: flex;
+    gap: 30px;
+}
+.book-detail .page-rait {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (max-width: 768px) {
+    .book-data {
+        flex-direction: column;
+    }
+    .book-data .book-img {
+        width: 100%;
+    }
+    .book-detail {
+        width: 100%;
+    }
+}

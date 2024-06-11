@@ -1,0 +1,10 @@
+footer {
+    height: 60px;
+    border-top: 1px solid var(--primery-color);
+}
+footer p {
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 18px;
+    font-weight: 600;
+}

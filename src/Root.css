@@ -1,0 +1,7 @@
+:root {
+    --primery-color: rgba(147, 125, 194, 1)
+}
+.dark {
+    background-color: black !important;
+    color: #fff !important;
+}

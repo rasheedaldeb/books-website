@@ -1,0 +1,12 @@
+.book-section {
+    padding: 100px 5.1244vw 0;
+}
+.book-section h1 {
+    padding-bottom: 46px;
+}
+.book-section .book-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
