@@ -7,15 +7,20 @@ const ShowBooksSection = () => {
   const [isLoading, setisLoading] = useState(false);
   const [booksData, setbooksData] = useState([]);
   useEffect(() => {
-    setisLoading(true);
-    axios
-      .get("https://example-data.draftbit.com/books?_limit=8")
-      .then((res) => {
-        console.log(res.data);
-        setbooksData(res.data);
-      });
-    console.log(booksData);
-    setisLoading(false);
+    const fetchBooks = async () => {
+      setisLoading(true);
+      try {
+        const response = await axios.get(
+          "https://example-data.draftbit.com/books?_limit=8"
+        );
+        const books = await response.data;
+        setbooksData(books);
+      } catch (e) {
+        console.log(e);
+      }
+      setisLoading(false);
+    };
+    fetchBooks();
   }, []);
   if (isLoading) {
     return (
