@@ -24,8 +24,14 @@ const ShowBooksSection = () => {
   }, []);
   if (isLoading) {
     return (
-      <div>
-        <ClipLoader />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <ClipLoader size={100} />
       </div>
     );
   }
